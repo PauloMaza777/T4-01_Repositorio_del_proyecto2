@@ -1,6 +1,10 @@
 # Endpoint: `GET /foro/{id}`
 
-Permite obtener información detallada sobre un tema específico mediante su identificador único.
+En este apartado estaremos hablando sobre la tabla foro, en donde se estaran registrando los datos del id, nombre, descripcion, categoria, y fecha de creacion del foro.
+
+Aquí es en donde se crearan los diferentes tipos de foros para cualquier tipo de categorias, ya sea para cualquier tipo de videojuegos o noticias especificas para un tema en especial.
+
+Posteriormente se estara hablando con mas a detalle todos los apartados que debe de tener y como debe de cumplirse
 
 ## Parámetros de URL
 - `{id}` (obligatorio): Identificador único del tema que se desea recuperar.

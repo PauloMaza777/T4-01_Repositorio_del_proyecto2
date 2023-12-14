@@ -1,7 +1,8 @@
-# API RESTful con Node.js
+# PROYECTO DE ESPECIALIDAD
 
-Proyecto de demostración para clases de desarrollo de APIs utilizando Node.js,
-con implementación en contenedores de Docker.
+## Foro sobre las ultimas tendencias en videojuegos
+
+Bienvenido a la documentación de la API de mi trabajo de especialidad donde tiene como objetivo el crear un foro especializado sobre para hablar sobre las ultimas tendencias en videojuegos.
 
 ## Entidades a Utilizar
 
@@ -18,7 +19,8 @@ con implementación en contenedores de Docker.
 
 ## Tabla de contenido
 
-- [API RESTful con Node.js](#api-restful-con-nodejs)
+- [PROYECTO DE ESPECIALIDAD](#proyecto-de-especialidad)
+  - [Entidades a Utilizar](#entidades-a-utilizar)
   - [Tabla de contenido](#tabla-de-contenido)
   - [Requisitos de instalación](#requisitos-de-instalación)
   - [Instrucciones para la instalación](#instrucciones-para-la-instalación)

@@ -1,6 +1,10 @@
 # Endpoint: `GET /usuarios/{id}`
 
-Permite obtener información detallada sobre un tema específico mediante su identificador único.
+En este apartado estaremos hablando sobre la tabla usuarios , en donde se estaran registrando los datos mas importantes de los usuarios, como por ejemplo, su id, nombre, correo electronico, contraseña, nombre entre muchos otros
+
+Aqui es en donde se estaran encargando de estar mandando los registros de los usuarios creados dentro del foro
+
+Posteriormente se estara hablando con mas a detalle todos los apartados que debe de tener y como debe de cumplirse
 
 ## Parámetros de URL
 - `{id}` (obligatorio): Identificador único del tema que se desea recuperar.

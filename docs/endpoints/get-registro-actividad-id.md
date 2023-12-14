@@ -1,6 +1,10 @@
 # Endpoint: `GET /registro de actividad /{id}`
 
-Permite obtener información detallada sobre un tema específico mediante su identificador único.
+En este apartado estaremos hablando sobre la tabla Registro de actividades, en donde se estaran registrando los nombres, la descripción y la categoria de las actividades registradas
+
+Aqui es en donde se estaran encargando de estar registrando las actividades de los foros
+
+Posteriormente se estara hablando con mas a detalle todos los apartados que debe de tener y como debe de cumplirse
 
 ## Parámetros de URL
 - `{id}` (obligatorio): Identificador único del tema que se desea recuperar.

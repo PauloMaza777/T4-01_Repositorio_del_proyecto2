@@ -1,8 +1,8 @@
-# Endpoint: `GET /usuarios/{id}`
+# Endpoint: `CRUD /registro de actividad /{id}`
 
-En este apartado estaremos hablando sobre la tabla usuarios , en donde se estaran registrando los datos mas importantes de los usuarios, como por ejemplo, su id, nombre, correo electronico, contraseña, nombre entre muchos otros
+En este apartado estaremos hablando sobre la tabla Registro de actividades, en donde se estaran registrando los nombres, la descripción y la categoria de las actividades registradas
 
-Aqui es en donde se estaran encargando de estar mandando los registros de los usuarios creados dentro del foro
+Aqui es en donde se estaran encargando de estar registrando las actividades de los foros
 
 Posteriormente se estara hablando con mas a detalle todos los apartados que debe de tener y como debe de cumplirse
 
@@ -11,26 +11,62 @@ Posteriormente se estara hablando con mas a detalle todos los apartados que debe
 
 ## Ejemplo de Solicitud
 ```http
-GET /usuarios/1
-POST /usuarios/1
-PUT /usuarios/1
-PATCH /usuarios/1
+GET /registro_actividad/1
 ```
 
 ## Respuesta Exitosa (Código 200 OK)
 ```json
 {
-    "id": 1,
-    "nombre_usuario": "PauloMaza",
-    "correo_electronico": "paa.hueson123@gmail.com",
-    "contraseña": "123456789",
-    "nombre": "PauloEsteban",
-    "apellidos": "MazaRivera",
-    "fecha_nacimiento": "2001-11-16T00:00:00.000Z",
-    "genero": "masculino",
-    "pais": "Mexico",
-    "ciudad": "colima",
-    "intereses": "Tecnologia"
+  "id": "1",
+  "usuario_id": "1",
+  "tipo_actividad": "login",
+  "detalles": "Inicio de sesion exitoso ",
+  "fecha_hora": "2023-04-05"
+}
+```
+
+## Ejemplo de Solicitud
+```http
+POST /registro_actividad/1
+```
+
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+  "id": "3",
+  "usuario_id": "3",
+  "tipo_actividad": "logout",
+  "detalles": "Inicio de sesion exitoso en la plataforma de tecnología",
+  "fecha_hora": "2023-04-05"
+}
+```
+
+## Ejemplo de Solicitud
+```http
+PUT /registro_actividad/1
+```
+
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+  "id": "1",
+  "usuario_id": "1",
+  "tipo_actividad": "login",
+  "detalles": "Inicio de sesion exitoso en la plataforma de videojugos",
+}
+```
+
+## Ejemplo de Solicitud
+```http
+PATCH /registro_actividad/1
+```
+
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+  "tipo_actividad": "eliminar_publicación",
+  "detalles": "Eliminación de una nueva publicación",
+  "fecha_hora": "2023-04-05"
 }
 ```
 

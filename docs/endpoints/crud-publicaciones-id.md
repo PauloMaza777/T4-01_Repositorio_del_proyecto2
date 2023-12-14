@@ -1,4 +1,4 @@
-# Endpoint: `GET /publicaciones/{id}`
+# Endpoint: `CRUD /publicaciones/{id}`
 
 En este apartado estaremos hablando sobre la tabla publicaciones , en donde se estaran registrando los datos del id de la publicación, el id del usuario, id del foro, titulo, contenido y fecha de publicacion
 
@@ -12,9 +12,6 @@ Posteriormente se estara hablando con mas a detalle todos los apartados que debe
 ## Ejemplo de Solicitud
 ```http
 GET /publicaciones/1
-POST /publicaciones/1
-PUT /publicaciones/1
-PATCH /publicaciones/1
 ```
 
 ## Respuesta Exitosa (Código 200 OK)
@@ -26,6 +23,53 @@ PATCH /publicaciones/1
     "titulo": "Mi primera publicación",
     "contenido": "¡Hola a todos! Esta es mi primera publicación en el foro general.",
     "fecha_publicacion": "2023-03-10T00:00:00.000Z"
+}
+```
+
+## Ejemplo de Solicitud
+```http
+POST /publicaciones/1
+```
+
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+    "id": 3,
+    "usuario_id": 3,
+    "foro_id": 2,
+    "titulo": "Avances Deportivos",
+    "contenido": "Avances sobre las ultimas tendencias en Deportes",
+    "fecha_publicacion": "2023-04-05"
+}
+```
+
+## Ejemplo de Solicitud
+```http
+PUT /publicaciones/1
+```
+
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+    "id": 1,
+    "usuario_id": 1,
+    "foro_id": 1,
+    "titulo": "Mi primera publicacion de videojuegos",
+    "contenido": "¡Hola a todos! Esta es mi primera publicación en el foro general.",
+}
+```
+
+## Ejemplo de Solicitud
+```http
+PATCH /publicaciones/1
+```
+
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+    "titulo": "Avances sobre deportes",
+    "contenido": "Compartiendo noticias sobre los avances deportivos mas recientes",
+    "fecha_publicacion": "2023-04-05"
 }
 ```
 

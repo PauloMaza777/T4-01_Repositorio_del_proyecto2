@@ -2,15 +2,15 @@
 
 Bienvenido a la documentación de la API de mi trabajo de especialidad donde tiene como objetivo el crear un foro especializado sobre para hablar sobre las ultimas tendencias en videojuegos.
 
-## Descripción General de Endpoints GET
+## Descripción General de Endpoints
 
 | Recurso                    | Descripción |
 | -------------------------- | ----------- |
-| [`GET /usuarios/{id}`](./endpoints/get-usuarios-id.md)          | Obtiene información detallada sobre un la tabla de usuarios |
-| [`GET /foro/{id}`](./endpoints/get-foro-id.md)          | Obtiene información detallada sobre un la tabla de foros |
-| [`GET /publicaciones/{id}`](./endpoints/get-publicaciones-id.md)          | Obtiene información detallada sobre un la tabla de publicaciones |
-| [`GET /notificaciones/{id}`](./endpoints/get-notificaciones-id.md)          | Obtiene información detallada sobre un la tabla de notificaciones |
-| [`GET /acitividades/{id}`](./endpoints/get-registro-actividad-id.md)          | Obtiene información detallada sobre un la tabla de registro de actividad |
+| [`CRUD /usuarios/{id}`](./endpoints/crud-usuarios-id.md)          | Obtiene información detallada sobre un la tabla de usuarios y sus métodos usados|
+| [`CRUD /foro/{id}`](./endpoints/crud-foro-id.md)          | Obtiene información detallada sobre un la tabla de foros y sus métodos usados |
+| [`CRUD /publicaciones/{id}`](./endpoints/crud-publicaciones-id.md)          | Obtiene información detallada sobre un la tabla de publicaciones y sus métodos usados |
+| [`CRUD /notificaciones/{id}`](./endpoints/crud-notificaciones-id.md)          | Obtiene información detallada sobre un la tabla de notificaciones y sus métodos usados |
+| [`CRUD /acitividades/{id}`](./endpoints/crud-registro-actividad-id.md)          | Obtiene información detallada sobre un la tabla de registro de actividad y sus métodos usados |
 
 A continuación, se hablará brevemente sobre qué hacen y cómo se usan los métodos utilizados en este proyecto de especialidad. El objetivo es optimizar la búsqueda de información sobre videojuegos, asegurando que los amantes de estos siempre tengan acceso a información de calidad.
 

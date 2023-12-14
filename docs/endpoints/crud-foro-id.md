@@ -1,4 +1,4 @@
-# Endpoint: `GET /foro/{id}`
+# Endpoint: `CRUD /foro/{id}`
 
 En este apartado estaremos hablando sobre la tabla foro, en donde se estaran registrando los datos del id, nombre, descripcion, categoria, y fecha de creacion del foro.
 
@@ -12,9 +12,6 @@ Posteriormente se estara hablando con mas a detalle todos los apartados que debe
 ## Ejemplo de Solicitud
 ```http
 GET /foro/1
-POST /foro/1
-PUT /foro/1
-PATCH /foro/1
 ```
 
 ## Respuesta Exitosa (Código 200 OK)
@@ -25,6 +22,51 @@ PATCH /foro/1
     "descripcion": "Foro para discusiones generales",
     "categoria": "general",
     "fecha_creacion": "2023-01-01T00:00:00.000Z"
+}
+```
+
+## Ejemplo de Solicitud
+```http
+POST /foro/1
+```
+
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+    "id": 3,
+    "nombre": "Foro para desarrolladores",
+    "descripcion": "Foro de Desarrollo de cualquier videojuego",
+    "categoria": "Tecnología",
+    "fecha_creacion": "2023-02-15"
+}
+```
+
+## Ejemplo de Solicitud
+```http
+PUT /foro/1
+```
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+    "id": 2,
+    "nombre": "Tecnologia avanzada para desarrolladores de videojuegos",
+    "descripcion": "Discución sobre las ultimas innovaciones tecnológicas",
+    "categoria": "Tecnología",
+}
+```
+
+## Ejemplo de Solicitud
+```http
+PATCH /foro/1
+```
+
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+    "nombre": "Foro para desarrolladores",
+    "descripcion": "Foro de Desarrollo de cualquier videojuego como fortnite",
+    "categoria": "general",
+    "fecha_creacion": "2023-02-15"
 }
 ```
 

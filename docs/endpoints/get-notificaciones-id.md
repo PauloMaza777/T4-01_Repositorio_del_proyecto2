@@ -1,6 +1,10 @@
 # Endpoint: `GET /notificaciones/{id}`
 
-Permite obtener información detallada sobre un tema específico mediante su identificador único.
+En este apartado estaremos hablando sobre la tabla notificaciones , en donde se estaran registrando los datos del id, el id del usuario, mensaje de la plataforma y la fecha de envio
+
+Aqui es en donde se estaran encargando de estar mandando las notificaciones hacia los usuarios que vallan ingresando a la pagina
+
+Posteriormente se estara hablando con mas a detalle todos los apartados que debe de tener y como debe de cumplirse
 
 ## Parámetros de URL
 - `{id}` (obligatorio): Identificador único del tema que se desea recuperar.

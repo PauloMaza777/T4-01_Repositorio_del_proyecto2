@@ -1,6 +1,10 @@
 # Endpoint: `GET /publicaciones/{id}`
 
-Permite obtener información detallada sobre un tema específico mediante su identificador único.
+En este apartado estaremos hablando sobre la tabla publicaciones , en donde se estaran registrando los datos del id de la publicación, el id del usuario, id del foro, titulo, contenido y fecha de publicacion
+
+Aqui es en donde se estaran encargando de estar mandando las publicaciones hacia todos los foros que esten creados
+
+Posteriormente se estara hablando con mas a detalle todos los apartados que debe de tener y como debe de cumplirse
 
 ## Parámetros de URL
 - `{id}` (obligatorio): Identificador único del tema que se desea recuperar.

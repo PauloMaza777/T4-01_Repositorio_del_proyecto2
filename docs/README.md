@@ -2,7 +2,7 @@
 
 Bienvenido a la documentación de la API de mi trabajo de especialidad donde tiene como objetivo el crear un foro especializado sobre para hablar sobre las ultimas tendencias en videojuegos.
 
-## Descripción General de Endpoints
+## Descripción General de Endpoints GET
 
 | Recurso                    | Descripción |
 | -------------------------- | ----------- |
@@ -11,8 +11,6 @@ Bienvenido a la documentación de la API de mi trabajo de especialidad donde tie
 | [`GET /publicaciones/{id}`](./endpoints/get-publicaciones-id.md)          | Obtiene información detallada sobre un la tabla de publicaciones |
 | [`GET /notificaciones/{id}`](./endpoints/get-notificaciones-id.md)          | Obtiene información detallada sobre un la tabla de notificaciones |
 | [`GET /acitividades/{id}`](./endpoints/get-registro-actividad-id.md)          | Obtiene información detallada sobre un la tabla de registro de actividad |
-
-## Descripcion Sobre los Métodos
 
 A continuación, se hablará brevemente sobre qué hacen y cómo se usan los métodos utilizados en este proyecto de especialidad. El objetivo es optimizar la búsqueda de información sobre videojuegos, asegurando que los amantes de estos siempre tengan acceso a información de calidad.
 

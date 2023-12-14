@@ -27,10 +27,10 @@ GET /foro/1
 
 ## Ejemplo de Solicitud
 ```http
-POST /foro/1
+POST /foro/3
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
     "id": 3,
@@ -43,9 +43,9 @@ POST /foro/1
 
 ## Ejemplo de Solicitud
 ```http
-PUT /foro/1
+PUT /foro/2
 ```
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
     "id": 2,
@@ -60,9 +60,10 @@ PUT /foro/1
 PATCH /foro/1
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
+    "id": 1,
     "nombre": "Foro para desarrolladores",
     "descripcion": "Foro de Desarrollo de cualquier videojuego como fortnite",
     "categoria": "general",

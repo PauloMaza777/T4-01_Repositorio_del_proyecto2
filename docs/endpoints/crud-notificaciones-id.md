@@ -26,10 +26,10 @@ GET /notificaciones/1
 
 ## Ejemplo de Solicitud
 ```http
-POST /notificaciones/1
+POST /notificaciones/3
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
     "id": 3,
@@ -44,7 +44,7 @@ POST /notificaciones/1
 PUT /notificaciones/1
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
     "id": 1,
@@ -59,9 +59,10 @@ PUT /notificaciones/1
 PATCH /notificaciones/1
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
+    "id": 1,
     "mensaje": "Nuevo mensaje en tu publicacion de la plataforma",
     "fecha_envio": "2023-04-20"
 }

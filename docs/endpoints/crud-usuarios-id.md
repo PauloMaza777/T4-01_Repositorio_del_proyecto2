@@ -33,9 +33,9 @@ GET /usuarios/1
 
 ## Ejemplo de Solicitud
 ```http
-POST /usuarios/1
+POST /usuarios/7
 ```
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
     "id": 7,
@@ -56,7 +56,7 @@ POST /usuarios/1
 ```http
 PUT /usuarios/1
 ```
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
     "id": 1,
@@ -78,9 +78,10 @@ PUT /usuarios/1
 PATCH /usuarios/1
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
+    "id": 1,
     "nombre_usuario": "PauloMazaaaa",
     "correo_electronico": "20460351@colima.tecnm.mx",
     "contraseña": "987654321",

@@ -28,10 +28,10 @@ GET /publicaciones/1
 
 ## Ejemplo de Solicitud
 ```http
-POST /publicaciones/1
+POST /publicaciones/3
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
     "id": 3,
@@ -48,7 +48,7 @@ POST /publicaciones/1
 PUT /publicaciones/1
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
     "id": 1,
@@ -61,12 +61,13 @@ PUT /publicaciones/1
 
 ## Ejemplo de Solicitud
 ```http
-PATCH /publicaciones/1
+PATCH /publicaciones/3
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
+    "id": 3,
     "titulo": "Avances sobre deportes",
     "contenido": "Compartiendo noticias sobre los avances deportivos mas recientes",
     "fecha_publicacion": "2023-04-05"

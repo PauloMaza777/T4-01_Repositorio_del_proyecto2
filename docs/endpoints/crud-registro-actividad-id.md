@@ -27,10 +27,10 @@ GET /registro_actividad/1
 
 ## Ejemplo de Solicitud
 ```http
-POST /registro_actividad/1
+POST /registro_actividad/3
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
   "id": "3",
@@ -46,7 +46,7 @@ POST /registro_actividad/1
 PUT /registro_actividad/1
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (Código 201 Created)
 ```json
 {
   "id": "1",
@@ -58,12 +58,13 @@ PUT /registro_actividad/1
 
 ## Ejemplo de Solicitud
 ```http
-PATCH /registro_actividad/1
+PATCH /registro_actividad/2
 ```
 
-## Respuesta Exitosa (Código 200 OK)
+## Respuesta Exitosa (201 Created)
 ```json
 {
+  "id": "2",
   "tipo_actividad": "eliminar_publicación",
   "detalles": "Eliminación de una nueva publicación",
   "fecha_hora": "2023-04-05"

@@ -46,6 +46,18 @@ POST /registro_actividad/3
 PUT /registro_actividad/1
 ```
 
+- El método PUT tiene en este caso 2 posibles casos de respuestas satisfactorias, el 200 y el 201, como se ve a continuación.
+
+## Respuesta Exitosa (Código 200 OK)
+```json
+{
+  "id": "1",
+  "usuario_id": "1",
+  "tipo_actividad": "login",
+  "detalles": "Inicio de sesion exitoso en la plataforma de videojugos",
+}
+```
+
 ## Respuesta Exitosa (Código 201 Created)
 ```json
 {
@@ -61,7 +73,7 @@ PUT /registro_actividad/1
 PATCH /registro_actividad/2
 ```
 
-## Respuesta Exitosa (201 Created)
+## Respuesta Exitosa (200 OK)
 ```json
 {
   "id": "2",
@@ -72,6 +84,38 @@ PATCH /registro_actividad/2
 ```
 
 ## Respuestas de Errores Posibles
+- Código 400 Bad Request
+
+  La solicitud no pudo ser entendida o estaba mal formada.
+  ```json
+  {
+    "errno": 400,
+    "error": "Bad Request",
+    "error_description": "La solicitud no esta bien formulada"
+  }
+  ```
+
+- Código 401 Unauthorized:
+
+  Se requiere autenticación y/o autorización para acceder al recurso, pero no se proporcionaron o fueron incorrectos.
+  ```json
+  {
+    "errno": 401,
+    "error": "Unauthorized",
+    "error_description": "Se requiere autorización al recurso solicitado"
+  }
+
+- Código 403 Forbidden:
+
+  El servidor entendió la solicitud, pero se niega a cumplirla debido a restricciones en el acceso al recurso.
+  ```json
+  {
+    "errno": 403,
+    "error": "Forbidden",
+    "error_description": "El servidor rechazo la solicitud al recurso"
+  }
+  ```
+
 - Código 404 Not Found:
 
   Este error indica que la página solicitada por el usuario no se encontró en el servidor
@@ -80,6 +124,17 @@ PATCH /registro_actividad/2
     "errno": 404,
     "error": "not_found",
     "error_description": "No se encontró el tema."
+  }
+  ```
+
+- Código 409 Conflict:
+
+  Indica que la solicitud no pudo ser completada debido a un conflicto con el estado actual del recurso. Por ejemplo, podría ocurrir en una solicitud PUT o POST si hay un conflicto en los datos que se están intentando modificar o crear.
+  ```json
+  {
+    "errno": 409,
+    "error": "Conflict",
+    "error_description": "Error al completar la solicitud"
   }
   ```
 

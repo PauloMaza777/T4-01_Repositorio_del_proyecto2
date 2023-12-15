@@ -38,7 +38,7 @@ Asegúrate de tener instalado y configurado Docker antes de comenzar.
 1. Clonar el repositorio en la máquina local:
    
    ```sh
-   git clone https://github.com/francerz/node-restful.git
+   git clone https://github.com/PauloMaza777/T4-01_Repositorio_del_proyecto2
    ```
 
 2. Navegar al directorio del proyecto:
@@ -70,3 +70,4 @@ consulta la [documentación detallada](./docs/README.md).
 
 - [Node.js](https://www.nodejs.org)
 - [Docker](https://www.docker.com)
+- [DBeaver](https://dbeaver.io)

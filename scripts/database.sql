@@ -6,7 +6,7 @@ CREATE TABLE usuarios (
   id INT NOT NULL AUTO_INCREMENT,
   nombre_usuario VARCHAR(255) NOT NULL,
   correo_electronico VARCHAR(255) NOT NULL,
-  contraseña VARCHAR(255) NOT NULL,
+  contrasena VARCHAR(255) NOT NULL,
   nombre VARCHAR(255) NOT NULL,
   apellidos VARCHAR(255) NOT NULL,
   fecha_nacimiento DATE NOT NULL,
@@ -19,10 +19,11 @@ CREATE TABLE usuarios (
 
 CREATE TABLE foros (
   id INT NOT NULL AUTO_INCREMENT,
-  nombre VARCHAR(255) NOT NULL,
-  descripcion TEXT NOT NULL,
-  categoria ENUM('general', 'tecnología', 'deportes', 'entretenimiento', 'otros') NOT NULL,
+  tituloTema VARCHAR(50) NOT NULL,
+  nombreAutor VARCHAR(255) NOT NULL,
+  -- categoria ENUM('general', 'tecnología', 'deportes', 'entretenimiento', 'otros') NOT NULL,
   fecha_creacion DATE NOT NULL,
+  descripcion TEXT NOT NULL,
   PRIMARY KEY (id)
 );
 

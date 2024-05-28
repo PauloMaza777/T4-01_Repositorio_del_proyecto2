@@ -1,4 +1,6 @@
 const express = require('express');
+const cors = require('cors');
+
 const app = express();
 const puerto = 80;
 
@@ -7,6 +9,11 @@ const ForoController = require('./controllers/ForoControllers');
 const PublicacionesController = require('./controllers/PublicacionesControllers');
 const NotificacionesController = require('./controllers/NotificacionesControllers');
 const Registro_ActividadController = require('./controllers/Registro_ActividadControllers');
+
+
+// Configurar CORS
+app.use(cors());
+
 
 app.use(express.json());
 
